@@ -52,9 +52,13 @@ source_data = { "GRCh37": [{"id": "BTC Business Technology Consulting AG","label
                            "target": {"id": "Lenze AG","start": 21478117,"end": 85478117} }]
               }
 # Load data
-df = pd.read_excel(r'C:\Users\archa\Documents\Archana\IIS_GoogleDrive\IIS\Thesis\Julius\Application_Panywhere\EcosystemVisualization\Data\Data.xlsx',
+# df = pd.read_excel(r'C:\Users\archa\Documents\Archana\IIS_GoogleDrive\IIS\Thesis\Julius\Application_Panywhere\EcosystemVisualization\Data\Data.xlsx',
+#                    header=1,skiprows=1, names=['Roles','Actors','Resources','Activities','value contribution in ecosystem','Value contribution for the actors','Dependency','RoleInfo'])
+
+df = pd.read_csv(r'C:\Users\archa\Documents\Archana\IIS_GoogleDrive\IIS\Thesis\Julius\Application_Panywhere\EcosystemVisualization\Data\Datacsv.csv',
                    header=1,skiprows=1, names=['Roles','Actors','Resources','Activities','value contribution in ecosystem','Value contribution for the actors','Dependency','RoleInfo'])
 
+print (df)
 # Saving 4 elements into single column. This makes it easy to display the data
 df = pd.melt(df, id_vars=['Roles','Actors','Dependency','RoleInfo'],
              value_vars=['Resources','Activities','value contribution in ecosystem','Value contribution for the actors'],

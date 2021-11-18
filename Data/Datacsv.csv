@@ -1,4 +1,4 @@
-﻿Roles,Actors,Resources,Activities,value contribution in ecosystem,Value contribution for the actors,Dependency,RoleInfo,,
+﻿Roles,Actors,Resources,Activities,value contribution in ecosystem,Value contribution for the actors,Dependency,RoleInfo
 Maschinenbetreiber,Volkswagen,"Die Maschine/ Anlage/
 Produktionsstraße oder
 sogar das Werk
@@ -42,7 +42,7 @@ ergeben, wenn Standards (bspw. für Schnittstellen zu und von Maschinenkomponent
 lediglich auf der Plattform Verwendung finden und dadurch eine Maschine nur mit Services
 und Applikationen der Plattform kompatibel ist. Dies mag zwar aus Sicht der
 Plattformbetreiber wünschenswert erscheinen, ist jedoch eine enorme Eintrittsbarriere für die
-Kundenseite (Eisenmann, 2008).",,
+Kundenseite (Eisenmann, 2008)."
 Maschinenbetreiber,Gerresheimer,"Die Maschine/ Anlage/
 Produktionsstraße oder
 sogar das Werk
@@ -86,7 +86,7 @@ ergeben, wenn Standards (bspw. für Schnittstellen zu und von Maschinenkomponent
 lediglich auf der Plattform Verwendung finden und dadurch eine Maschine nur mit Services
 und Applikationen der Plattform kompatibel ist. Dies mag zwar aus Sicht der
 Plattformbetreiber wünschenswert erscheinen, ist jedoch eine enorme Eintrittsbarriere für die
-Kundenseite (Eisenmann, 2008).",,
+Kundenseite (Eisenmann, 2008)."
 Maschinenbetreiber,Sennheiser,"Die Maschine/ Anlage/
 Produktionsstraße oder
 sogar das Werk
@@ -130,8 +130,8 @@ ergeben, wenn Standards (bspw. für Schnittstellen zu und von Maschinenkomponent
 lediglich auf der Plattform Verwendung finden und dadurch eine Maschine nur mit Services
 und Applikationen der Plattform kompatibel ist. Dies mag zwar aus Sicht der
 Plattformbetreiber wünschenswert erscheinen, ist jedoch eine enorme Eintrittsbarriere für die
-Kundenseite (Eisenmann, 2008).",,
-Systemintegrator:,BTC Business Technology Consulting AG,,"Sorgt f ür Machbarkeitsprüfungen
+Kundenseite (Eisenmann, 2008)."
+Systemintegrator:,BTC Business Technology Consulting AG,Kein Resources,"Sorgt f ür Machbarkeitsprüfungen
 Führt das Deployment beim
 Anwender (ev tl. sich selbst)
 durch
@@ -155,7 +155,7 @@ Anwenderorganisation abhängig von dem Akteur der diese Rolle ausübt. Ein Wechs
 Rolle ist aufgrund der Spezifika eines Geschäftsprozesses, als auch wegen der Besonderheiten
 und dem Kontext einer Anwenderorganisation risikoreich und sollte vermieden werden (die
 Einarbeitung in die Daten und Geschäftsprozesse ist Aufwendig und kann schlecht nachgeholt
-werden)",,
+werden)"
 Maschinenkomponentenanbieter,Lenze,"IoT-Schnittstellen
 Edge Dev ices für den
 jeweiligen Serv ice
@@ -208,7 +208,7 @@ gemeinsame Wertversprechen in Gefahr. Ein Maschinenbetreiber würde Probleme bek
 adäquater Ersatz zur Verfügung steht. Die Komponenten sollten dann auch mit anderen
 Services oder Applikationen außerhalb der Plattform kompatibel gemacht werden können.
 Dieses Risiko tragen Maschinenbetreiber und Maschinenkomponentenanbieter, bzw. auch die
-Maschinenhersteller",,
+Maschinenhersteller"
 Maschinenhersteller,Siemens AG,"IoT / Smart Serv ice
 Experten
 Serv ice-techniker
@@ -263,7 +263,7 @@ ausschließlich über den Maschinenherstellern existiert. Maschinenkomponentenan
 auch Service und Applikationsanbieter sehen meist gar nicht wo ihre Angebote zum Einsatz
 kommen. Durch eine hohe Transparenz über die Plattform könnten diese Marktverhältnisse
 verändert werden, was unbedingt beim Design der Plattform und des Ökosystems zu
-berücksichtigen ist.",,
+berücksichtigen ist."
 Maschinenhersteller,DMG Mori,"IoT / Smart Serv ice
 Experten
 Serv ice-techniker
@@ -318,7 +318,7 @@ ausschließlich über den Maschinenherstellern existiert. Maschinenkomponentenan
 auch Service und Applikationsanbieter sehen meist gar nicht wo ihre Angebote zum Einsatz
 kommen. Durch eine hohe Transparenz über die Plattform könnten diese Marktverhältnisse
 verändert werden, was unbedingt beim Design der Plattform und des Ökosystems zu
-berücksichtigen ist.",,
+berücksichtigen ist."
 Applikationsanbieter/Berater,infor GmbH Deutschland,"Umgebung f ür
 Prototy ping
 Maschinenmodelle und
@@ -361,7 +361,7 @@ bestimmtem Maß nach diesen orientieren müssen. Hier ergibt sich ein weiteres
 Machtverhältnis, das durch die Plattformbetreiber entsprechend reguliert werden kann oder
 muss. Damit der Applikationsanbieter nicht übermäßig durch die Serviceanbieter dominiert
 wird, sollte sich hier ein angemessenes Verhältnis einstellen, was jedoch nicht so einfach zu
-erreichen ist, aber von den Betreibern mitberücksichtigt werden muss",,
+erreichen ist, aber von den Betreibern mitberücksichtigt werden muss"
 Service Anbieter/Berater,ÍNDUMESS (industrielle Messtechnik),"Nutzt eigene Serv er um
 Serv ices zu entwickeln","Führt Bedarf sanalyse für
 Serv ices durch
@@ -388,7 +388,7 @@ Maschinenbetreiber bezahlt wurden.
 Ebenso stellt die Schnittstellen-Rolle des Systemintegrators hier eine Funktion dar, die näher
 beim Design der Plattform berücksichtigt werden muss. Im Speziellen sollte der Fall interner
 vs. externer Systemintegrator unterschieden werden, bzw. Möglichkeiten ermittelt werden,
-wie diese Rolle ausgefüllt werden kann, sodass keine Konflikte entstehen.",,
+wie diese Rolle ausgefüllt werden kann, sodass keine Konflikte entstehen."
 Service Anbieter/Berater,slashwhy,"Nutzt eigene Serv er um
 Serv ices zu entwickeln","Führt Bedarf sanalyse für
 Serv ices durch
@@ -415,7 +415,7 @@ Maschinenbetreiber bezahlt wurden.
 Ebenso stellt die Schnittstellen-Rolle des Systemintegrators hier eine Funktion dar, die näher
 beim Design der Plattform berücksichtigt werden muss. Im Speziellen sollte der Fall interner
 vs. externer Systemintegrator unterschieden werden, bzw. Möglichkeiten ermittelt werden,
-wie diese Rolle ausgefüllt werden kann, sodass keine Konflikte entstehen.",,
+wie diese Rolle ausgefüllt werden kann, sodass keine Konflikte entstehen."
 Plattformbetreiber,Trumpf (Axoom Plattform),"IT-Inf rastruktur
 Data-Storage
 Serv er-Kapazitäten für
@@ -466,4 +466,4 @@ selbst kein Angebot auf einer der Seiten positioniert (bspw. wie bei Ebay). Zus�
 hierbei die Möglichkeit auch eine Dritt-Organisation für diese Rolle auszuwählen, die von
 Grund auf nicht profitorientiert ist (z.B. Industrie-Intermediäre wie die Industrie- und
 Handelskammern, Verbände oder Netzwerkakteure), und somit mehr Vertrauen durch die
-Akteure des Ökosystems erfährt.",,
+Akteure des Ökosystems erfährt."

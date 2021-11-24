@@ -28,48 +28,78 @@ import numpy as np
 #using dash for chord
 import dash_bio as dashbio
 
-source_data = { "GRCh37": [{"id": "BTC Business Technology Consulting AG","label": "BTC Business Technology Consulting AG",
-                            "color": "#996600","len": 369250621},
-                           {"id": "Sennheiser","label": "Sennheiser",
-                            "color": "#666600","len": 249250621},
-                           {"id": "Gerresheimer","label": "Gerresheimer",
-                            "color": "#99991E","len": 249250621},
-                           {"id": "Volkswagen","label": "Volkswagen",
-                            "color": "#CC0000","len": 249250621},
-                           {"id": "Lenze AG","label": "Lenze AG",
-                            "color": "#FF0000","len": 149250621},
-                           {"id": "Siemens AG","label": "Siemens AG",
-                            "color": "#FF00CC","len": 249250621},
-                           {"id": "infor GmbH Deutschland","label": "infor GmbH Deutschland",
-                            "color": "#FFCCCC","len": 249250621},
-                           {"id": "ÍNDUMESS (industrielle Messtechnik)","label": "ÍNDUMESS (industrielle Messtechnik)",
-                            "color": "#FF9900","len": 349250621},
-                           {"id": "slashwhy","label": "slashwhy",
-                            "color": "#FFCC00","len": 249250621}],
-               "chords": [{"color": "#ff5722","source": {"id": "slashwhy","start": 22186054,"end": 36186054},
-                           "target": {"id": "Volkswagen","start": 21478117,"end": 85478117} },
-                         {"color": "#ff5722","source": {"id": "Volkswagen","start":  74807187,"end": 78807187},
-                           "target": {"id": "Lenze AG","start": 21478117,"end": 85478117} }]
-              }
-# Load data
-# df = pd.read_excel(r'C:\Users\archa\Documents\Archana\IIS_GoogleDrive\IIS\Thesis\Julius\Application_Panywhere\EcosystemVisualization\Data\Data.xlsx',
-#                    header=1,skiprows=1, names=['Roles','Actors','Resources','Activities','value contribution in ecosystem','Value contribution for the actors','Dependency','RoleInfo'])
+#Dash cytoscape
+import dash_cytoscape as cyto
 
+# Load data
 df = pd.read_csv(r'C:\Users\archa\Documents\Archana\IIS_GoogleDrive\IIS\Thesis\Julius\Application_Panywhere\EcosystemVisualization\Data\Datacsv.csv',
                    header=1,skiprows=1, names=['Roles','Actors','Resources','Activities','value contribution in ecosystem','Value contribution for the actors','Dependency','RoleInfo'])
 
-print (df)
 # Saving 4 elements into single column. This makes it easy to display the data
 df = pd.melt(df, id_vars=['Roles','Actors','Dependency','RoleInfo'],
              value_vars=['Resources','Activities','value contribution in ecosystem','Value contribution for the actors'],
              var_name='results',value_name='StructuralEements')
+#Actor data for cytoscape
+Myelements = [ #Nodes
+                {'data': {'id': 'SIone', 'label': 'BTC Business Technology Consulting AG'},
+                 'position': {'x': 150, 'y': 50}, 'classes': 'NodeColor'
+                 },
+
+                {'data': {'id': 'MOone', 'label': 'Volkswagen'},
+                 'position': {'x': 300, 'y': 150}, 'classes': 'NodeColor'
+                 },
+
+                {'data': {'id': 'MOtwo', 'label': 'Gerresheimer'},
+                 'position': {'x': 300, 'y': 170}, 'classes': 'NodeColor'
+                 },
+
+                {'data': {'id': 'MOthree', 'label': 'Sennheiser'},
+                 'position': {'x': 300, 'y': 190}, 'classes': 'NodeColor'
+                 },
+
+                {'data': {'id': 'MCSone', 'label': 'Lenze'},
+                 'position': {'x': 200, 'y': 200}, 'classes': 'NodeColor'
+                 },
+
+                {'data': {'id': 'MMone', 'label': 'Siemens AG'},
+                 'position': {'x': 190, 'y': 190}, 'classes': 'NodeColor'
+                 },
+
+                {'data': {'id': 'MMtwo', 'label': 'DMG Mori'},
+                 'position': {'x': 190, 'y': 200}, 'classes': 'NodeColor'
+                 },
+
+                {'data': {'id': 'APone', 'label': 'RapidMiner GmbH'},
+                 'position': {'x': 160, 'y': 190}, 'classes': 'NodeColor'
+                 },
+
+                {'data': {'id': 'SPone', 'label': 'slashwhy'},
+                 'position': {'x': 140, 'y': 170}, 'classes': 'NodeColor'
+                 },
+
+                {'data': {'id': 'POone', 'label': 'Trump (Axoom platform)'},
+                 'position': {'x': 120, 'y': 150}, 'classes': 'NodeColor'
+                 },
+
+                # Links
+                {'data': {'source': 'SIone', 'target': 'MOone'}, 'classes': 'EdgeColor'},
+                {'data': {'source': 'SIone', 'target': 'MOtwo'}, 'classes': 'EdgeColor'},
+                {'data': {'source': 'SIone', 'target': 'MOthree'}, 'classes': 'EdgeColor'},
+                {'data': {'source': 'MOone', 'target': 'MCSone'}, 'classes': 'EdgeColor'},
+                {'data': {'source': 'MCSone', 'target': 'MMone'}, 'classes': 'EdgeColor'},
+                {'data': {'source': 'MCSone', 'target': 'MMtwo'}, 'classes': 'EdgeColor'},
+                {'data': {'source': 'MMtwo', 'target': 'APone'}, 'classes': 'EdgeColor'},
+                {'data': {'source': 'APone', 'target': 'SPone'}, 'classes': 'EdgeColor'},
+                {'data': {'source': 'SPone', 'target': 'POone'}, 'classes': 'EdgeColor'},
+            ]
 # Build App
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 
+#Layout of all the graphs
 app.layout = dbc.Container([
-    #     Creating treemap
     dbc.Row([
+    #Creating treemap
         dbc.Col([
             dcc.Graph(id='treemap',
                       figure=px.treemap(df,
@@ -77,39 +107,60 @@ app.layout = dbc.Container([
                                         values='Dependency',
                                         height=600, width=700).update_layout(margin=dict(t=25, r=0, l=5, b=20))
                       )], width=6),
-        dbc.Col([dashbio.Circos(
-            id='Dashcircos',
-            layout=source_data['GRCh37'],
-            size=600,
-            #                               labels = 'Actors supply chain',
-            config={
-                'innerRadius': 200,  # 600 / 2 - 80,
-                'outerRadius': 180,  # 600 / 2 - 40,
-                'ticks': {'display': False},
-                'labels': {
-                    'position': 'bottom',
-                    'display': True,
-                    'size': 11,
-                    'color': '#996600',
-                    'radialOffset': 15,
-                },
-            },
-            #                                 selectEvent={"0": "hover", "1": "click", "2": "both"},
-            tracks=[{
-                'type': 'CHORDS',
-                'data': source_data['chords'],
-                'ticks': {'display': False, 'labelDenominator': 1000000},
-                'config': {
-                    'tooltipContent': {
-                        'source': 'source',
-                        'sourceID': 'id',
-                        'target': 'target',
-                        'targetID': 'id',
-                        #                     'targetEnd': 'end'
-                    }
-                }
-            }],
-        )], width=6)
+        #Creating cytoscope for actors
+        dbc.Col([
+            html.Div([
+                dcc.Dropdown(
+                    id='dpdn',
+                    value='breadthfirst',
+                    clearable=False,
+                    options=[
+                        {'label': name.capitalize(), 'value': name}
+                        for name in ['breadthfirst' ,'grid', 'random', 'circle', 'cose', 'concentric']
+                    ]
+                ),
+                cyto.Cytoscape(
+                    id='cytoscapeActors',
+                    autoungrabify = False,
+                    minZoom=0.2,
+                    maxZoom=1,
+                    layout={'name': 'grid', 'rows':3,'cols':3},
+                    style={'width': '100%', 'height': '400px'},
+                    elements= Myelements,
+                    stylesheet=[
+                        # Group selectors for NODES
+                        {
+                            'selector': 'node',
+                            'style': {
+                                'label': 'data(label)'
+                            }
+                        },
+
+                        # Group selectors for EDGES
+                        # {
+                        #     'selector': 'edge',
+                        #     'style': {
+                        #         'label': 'data(weight)'
+                        #     }
+                        # },
+                        # Class selectors
+                        {
+                            'selector': '.NodeColor',
+                            'style': {
+                                'background-color': '#33D5FF',
+                                'line-color': '#33D5FF'
+                            }
+                        },
+                        {
+                            'selector': '.EdgeColor',
+                            'style': {
+                                'background-color': '#9433FF',
+                                'line-color': '#9433FF'
+                            }
+                        },
+                    ]
+                    )]
+                )], width =6)
     ]),
 
     #     Div to display the elements. This will be empty till a brach is cliked in treemap
@@ -118,6 +169,46 @@ app.layout = dbc.Container([
     ])
 
 ], fluid=True)
+
+#callback and update for dropdown
+@app.callback(Output('cytoscapeActors', 'layout'),
+              Input('dpdn', 'value'))
+def update_layout(layout_value):
+    if layout_value == 'breadthfirst':
+        return {
+        'name': layout_value,
+        'roots': '[id = "SIone"]',
+        'animate': True
+        }
+    else:
+        return {
+            'name': layout_value,
+            'animate': True
+        }
+
+#callback for cytograph actor click (can be used in future)
+# @app.callback(
+#     Output("Elementscontainer", "children"),
+#     Input('cytoscapeActors', 'tapNodeData')
+# )
+# def update_nodes(data):
+#     # print(data)
+#     if data is None:
+#         return dash.no_update
+#     else:
+#         label_slct = data['points'][0]['label']
+#         parent_slct = data['points'][0]['parent']
+#         # Filtering data for selected actor
+#         dff = df[(df.Roles == parent_slct) & (df["Actors"] == label_slct)]
+#         # create the table
+#         table_header = [html.Thead(html.Tr([html.Th(label_slct)]))]
+#         rows = []
+#         for x in dff["StructuralEements"]:
+#             if pd.isnull(x):
+#                 continue
+#             rows.append(html.Tr([html.Td(x)]))
+#         table_body = [html.Tbody(rows)]
+#         return dbc.Table(table_header + table_body, bordered=True)
 
 
 # Define callback to display the structural elememts
@@ -137,14 +228,6 @@ def update_modal(data):
             and data['points'][0]['label'] == 'Ecosystem':
         table_header = " "
         table_body = " "
-
-        #         figure= px.treemap(df,
-        #                                 path=[px.Constant('Ecosystem'),'Roles','Actors'],
-        #                                 values='Dependency',
-        #                                 height=700, width=1200).update_layout(margin=dict(t=25, r=0, l=5, b=20))
-        #         print(figure)
-        #         figure= figure.update_traces(height=700, width=1200).update_layout(margin=dict(t=25, r=0, l=5, b=20))
-        #         return figure,dbc.Table(table_header + table_body, bordered=False)
         return dbc.Table(table_header + table_body, bordered=False)
 
     # if Role is chosen (ecosystem is parent), don't update
@@ -156,14 +239,6 @@ def update_modal(data):
         # create the table
         table_header = [html.Thead(html.Tr([html.Th(label_slct)]))]
         table_body = [html.Tbody(dff["RoleInfo"].unique())]
-
-        # Updating the treemap to reduce the size
-        #         figure= px.treemap(dff,
-        #                                 path=[px.Constant('Ecosystem'),'Roles','Actors'],
-        #                                 values='Dependency',
-        #                                 height=500, width=500).update_layout(margin=dict(t=25, r=0, l=5, b=20))
-
-        #         return figure,dbc.Table(table_header + table_body, bordered=True)
         return dbc.Table(table_header + table_body, bordered=True)
 
     # if Actor is chosen, build table
@@ -180,14 +255,6 @@ def update_modal(data):
                 continue
             rows.append(html.Tr([html.Td(x)]))
         table_body = [html.Tbody(rows)]
-
-        # Updating the treemap to reduce the size
-        #         figure= px.treemap(dff,
-        #                                 path=[px.Constant('Ecosystem'),'Roles','Actors'],
-        #                                 values='Dependency',
-        #                                 height=500, width=500).update_layout(margin=dict(t=25, r=0, l=5, b=20))
-        #         print(figure)
-        #         return figure,dbc.Table(table_header + table_body, bordered=True)
         return dbc.Table(table_header + table_body, bordered=True)
 
 

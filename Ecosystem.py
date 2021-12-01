@@ -199,7 +199,7 @@ def update_layout(layout_value):
     if layout_value == 'breadthfirst':
         return {
         'name': layout_value,
-        'roots': '[id = "SIone"]',
+        'roots': '[id = "Lenze"]',
         'animate': True
         }
     else:

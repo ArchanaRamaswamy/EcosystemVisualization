@@ -1,17 +1,17 @@
 ﻿Roles,Actors,Resources,Activities,value contribution in ecosystem,Value contribution for the actors,Dependency,RoleInfo
-Maschinenbetreiber,Volkswagen,"Resources:Die Maschine/ Anlage/
+Maschinenbetreiber,Volkswagen,"Resources|Die Maschine/ Anlage/
 Produktionsstraße oder
 sogar das Werk
  ECS (Edge,Cloud,Server)
  Grundlegende IT
-Inf rastruktur","Activities:Applikationen auf eigenen
+Inf rastruktur","Activities|Applikationen auf eigenen
 Serv ern deployen
 Integration der Applikationen in
 die Geschäf tsprozesse
  Applikationen selektieren (Was
 möchte ich haben?)
  Potentiale erf assen / Bedarfe
-ermitteln","Value contribution in ecosystem:Kann als Data-Provider fungieren: z.B.
+ermitteln","Value contribution in ecosystem|Kann als Data-Provider fungieren: z.B.
 für Serv iceoptimierung
  Betreiber können selbst neue
 Applikationen adaptieren/innovieren
@@ -23,7 +23,7 @@ Applikationen zu integrieren
  Zahlt f ür Nutzung von Infrastruktur:
 eigene und externe
  Hat Netzwerkeffektbeitrag für das
-Ökosy stem","Value contribution for the actors in this role: Optimiert die
+Ökosy stem","Value contribution for the actors in this role|Optimiert die
 Geschäf tsprozesse: z.B.
 Produktivität, Qualität,
 Kostensenkung, Neue
@@ -87,19 +87,19 @@ lediglich auf der Plattform Verwendung finden und dadurch eine Maschine nur mit 
 und Applikationen der Plattform kompatibel ist. Dies mag zwar aus Sicht der
 Plattformbetreiber wünschenswert erscheinen, ist jedoch eine enorme Eintrittsbarriere für die
 Kundenseite (Eisenmann, 2008)."
-Maschinenbetreiber,Sennheiser,"Resources:Die Maschine/ Anlage/
+Maschinenbetreiber,Sennheiser,"Resources|Die Maschine/ Anlage/
 Produktionsstraße oder
 sogar das Werk
  ECS (Edge,Cloud,Server)
  Grundlegende IT
-Inf rastruktur","Activities:Applikationen auf eigenen
+Inf rastruktur","Activities|Applikationen auf eigenen
 Serv ern deployen
 Integration der Applikationen in
 die Geschäf tsprozesse
  Applikationen selektieren (Was
 möchte ich haben?)
  Potentiale erf assen / Bedarfe
-ermitteln","Value contribution in ecosystem: Kann als Data-Provider fungieren: z.B.
+ermitteln","Value contribution in ecosystem| Kann als Data-Provider fungieren: z.B.
 für Serv iceoptimierung
  Betreiber können selbst neue
 Applikationen adaptieren/innovieren
@@ -111,7 +111,7 @@ Applikationen zu integrieren
  Zahlt f ür Nutzung von Infrastruktur:
 eigene und externe
  Hat Netzwerkeffektbeitrag für das
-Ökosy stem","Value contribution for the actors in this role:  Optimiert die
+Ökosy stem","Value contribution for the actors in this role| Optimiert die
 Geschäf tsprozesse: z.B.
 Produktivität, Qualität,
 Kostensenkung, Neue
@@ -131,16 +131,16 @@ lediglich auf der Plattform Verwendung finden und dadurch eine Maschine nur mit 
 und Applikationen der Plattform kompatibel ist. Dies mag zwar aus Sicht der
 Plattformbetreiber wünschenswert erscheinen, ist jedoch eine enorme Eintrittsbarriere für die
 Kundenseite (Eisenmann, 2008)."
-Systemintegrator:,BTC Business Technology Consulting AG,Kein Resources,"Activities:Sorgt für Machbarkeitsprüfungen
+Systemintegrator:,BTC Business Technology Consulting AG,Kein Resources,"Activities|Sorgt für Machbarkeitsprüfungen
 Führt das Deployment beim
 Anwender (ev tl. sich selbst)
 durch
 Muss IT-Sicherheit mitdenken
-und zur Not auch mitberaten","Value contribution in ecosystem: Bildet die Schnittstelle zwischen Kunde
+und zur Not auch mitberaten","Value contribution in ecosystem| Bildet die Schnittstelle zwischen Kunde
 und Anbieter
 Schaf ft durchgängige Lösung (d.h. die
 Einbindung in das IT/OT-Ökosystem
-des Anwenders)","Value contribution for the actors in this role: Wird meist vom Anwender
+des Anwenders)","Value contribution for the actors in this role| Wird meist vom Anwender
 bezahlt
 Prov isionszahlungen von
 Applikationsanbietern",2,"Die Systemintegratorrolle hat eine Schlüsselfunktion im Wertschöpfungsnetzwerk des
@@ -156,13 +156,13 @@ Rolle ist aufgrund der Spezifika eines Geschäftsprozesses, als auch wegen der B
 und dem Kontext einer Anwenderorganisation risikoreich und sollte vermieden werden (die
 Einarbeitung in die Daten und Geschäftsprozesse ist Aufwendig und kann schlecht nachgeholt
 werden)"
-Maschinenkomponentenanbieter,Lenze,"Resources:IoT-Schnittstellen
+Maschinenkomponentenanbieter,Lenze,"Resources|IoT-Schnittstellen
 Edge Dev ices für den
-jeweiligen Serv ice
+jeweiligen Service
 Sensorik der Komponente
 Field-Devices: Sensoren,
-Dev ices, ganze
-Komponenten","Activities:Weiterentwicklung der jeweiligen
+Devices, ganze
+Komponenten","Activities|Weiterentwicklung der jeweiligen
 Field-Devices
 Analy sieren der erhobenen
 Daten
@@ -170,7 +170,7 @@ IoT
 Schnittstellen bereitstellen mit
 den jeweiligen Beschreibungen
 Entwickelt Services und
-Applikationen","Value contribution in ecosystem: Stellt Inf ormationen bereit welche Field
+Applikationen","Value contribution in ecosystem| Stellt Inf ormationen bereit welche Field
 Dev ices welche Daten bereitstellen
 können und welche Qualität diese
 haben
@@ -178,12 +178,12 @@ Welche Standards werden genutzt und
 wie die Daten bereitgestellt werden
 Die Antriebs- oder
 Steuerungskomponenten (Field & Edge
-Dev ices)
+Devices)
 ermöglicht die Bereitstellung von
 Prozessdaten des Maschinenbetreibers
 Bietet ev tl. selbst Templates für
 Applikationen an
-Bietet Serv ices an","Value contribution for the actors in this role: Vernetzung im
+Bietet Serv ices an","Value contribution for the actors in this role| Vernetzung im
 Wertschöpfungsnetzwerk
 Kann ganze PSS anbieten
 (Komplettlösungen)
@@ -209,7 +209,7 @@ adäquater Ersatz zur Verfügung steht. Die Komponenten sollten dann auch mit an
 Services oder Applikationen außerhalb der Plattform kompatibel gemacht werden können.
 Dieses Risiko tragen Maschinenbetreiber und Maschinenkomponentenanbieter, bzw. auch die
 Maschinenhersteller"
-Maschinenhersteller,Siemens AG,"Resources:IoT / Smart Serv ice
+Maschinenhersteller,Siemens AG,"Resources|IoT / Smart Serv ice
 Experten
 Serv ice-techniker
 Kundenbasis
@@ -217,7 +217,7 @@ Teilzeuge, Rohstoffe
 Produktionsanlage für
 Maschinen
 Installierte (Maschinen-)
-Basis","Activities: Integration der Applikationen in
+Basis","Activities| Integration der Applikationen in
 Maschine / Konnektoren für
 Geschäf tsprozesse bereitstellen
 Applikationen für Maschinen
@@ -230,7 +230,7 @@ Anpassung Geschäftsprozesse
 PSS-Management
 Anpassung Geschäftsmodelle
 Potentiale erf assen / Bedarfe für
-Maschinen ermitteln","Value contribution in ecosystem: Schnittstellen Integration
+Maschinen ermitteln","Value contribution in ecosystem| Schnittstellen Integration
 Deploy ment-Templates für Maschinen
 Maschinen/Software
 Beschreibungen: Stellt Informationen
@@ -241,7 +241,7 @@ Smart-Service-Infrastruktur
 Stellen Af ter-Sales Services zur
 Verf ügung
 Stellen Prod. Gewerbe Maschinen zur
-Verf ügung","Value contribution for the actors in this role: Enabler f ür neue
+Verf ügung","Value contribution for the actors in this role| Enabler f ür neue
 Geschäf tsmodelle (PSS, vGM,
 Pay per Use)
 Angebot v on Applikationen",1,"Für Maschinenhersteller entstehen ähnliche Abhängigkeiten zum Ökosystem, wie für den
@@ -264,7 +264,7 @@ auch Service und Applikationsanbieter sehen meist gar nicht wo ihre Angebote zum
 kommen. Durch eine hohe Transparenz über die Plattform könnten diese Marktverhältnisse
 verändert werden, was unbedingt beim Design der Plattform und des Ökosystems zu
 berücksichtigen ist."
-Maschinenhersteller,DMG Mori,"Resources:IoT / Smart Serv ice
+Maschinenhersteller,DMG Mori,"Resources|IoT / Smart Serv ice
 Experten
 Serv ice-techniker
 Kundenbasis
@@ -272,7 +272,7 @@ Teilzeuge, Rohstoffe
 Produktionsanlage für
 Maschinen
 Installierte (Maschinen-)
-Basis","Activities: Integration der Applikationen in
+Basis","Activities| Integration der Applikationen in
 Maschine / Konnektoren für
 Geschäf tsprozesse bereitstellen
 Applikationen für Maschinen
@@ -285,7 +285,7 @@ Anpassung Geschäftsprozesse
 PSS-Management
 Anpassung Geschäftsmodelle
 Potentiale erf assen / Bedarfe für
-Maschinen ermitteln","Value contribution in ecosystem: Schnittstellen Integration
+Maschinen ermitteln","Value contribution in ecosystem| Schnittstellen Integration
 Deploy ment-Templates für Maschinen
 Maschinen/Software
 Beschreibungen: Stellt Informationen
@@ -296,7 +296,7 @@ Smart-Service-Infrastruktur
 Stellen Af ter-Sales Services zur
 Verf ügung
 Stellen Prod. Gewerbe Maschinen zur
-Verf ügung","Value contribution for the actors in this role: Enabler f ür neue
+Verf ügung","Value contribution for the actors in this role| Enabler f ür neue
 Geschäf tsmodelle (PSS, vGM,
 Pay per Use)
 Angebot v on Applikationen",1,"Für Maschinenhersteller entstehen ähnliche Abhängigkeiten zum Ökosystem, wie für den
@@ -319,10 +319,10 @@ auch Service und Applikationsanbieter sehen meist gar nicht wo ihre Angebote zum
 kommen. Durch eine hohe Transparenz über die Plattform könnten diese Marktverhältnisse
 verändert werden, was unbedingt beim Design der Plattform und des Ökosystems zu
 berücksichtigen ist."
-Applikationsanbieter/Berater,infor GmbH Deutschland,"Resources: Umgebung f ür
+Applikationsanbieter/Berater,infor GmbH Deutschland,"Resources| Umgebung f ür
 Prototy ping
 Maschinenmodelle und
-Virtualisierungen","Activities: Schließt Service-Lücken ggf. mit
+Virtualisierungen","Activities| Schließt Service-Lücken ggf. mit
 eigenen Serv ices
 Vermittelt aktive zwischen der
 Serv ice/Applikations
@@ -330,7 +330,7 @@ Anbieterseite und der
 Anf orderungsseite
 Gibt Anreize f ür neue Services
 Kombiniert Services von den
-entsp. Anbietern"," Value contribution in ecosystem:Ermöglichen Konnektivität und
+entsp. Anbietern"," Value contribution in ecosystem| Ermöglichen Konnektivität und
 Kompatibilität mit anderen Services und
 Komponenten/Maschinen
 Steigern Attraktivität der Plattform
@@ -338,7 +338,7 @@ Reduzieren die Komplexität der
 Lösungen (all-in-one)
 Stellt Lösungen in Form von
 Applikationen für komplexere
-Problemstellungen zur Verf ügung","Value contribution for the actors in this role: Generiert Cashflow durch
+Problemstellungen zur Verf ügung","Value contribution for the actors in this role| Generiert Cashflow durch
 Verkauf von Services und
 indirekt durch Drittanbieter von
 Applikationen
@@ -362,8 +362,8 @@ Machtverhältnis, das durch die Plattformbetreiber entsprechend reguliert werden
 muss. Damit der Applikationsanbieter nicht übermäßig durch die Serviceanbieter dominiert
 wird, sollte sich hier ein angemessenes Verhältnis einstellen, was jedoch nicht so einfach zu
 erreichen ist, aber von den Betreibern mitberücksichtigt werden muss"
-Service Anbieter/Berater,ÍNDUMESS (industrielle Messtechnik),"Resources: Nutzt eigene Serv er um
-Serv ices zu entwickeln","Activities: Führt Bedarf sanalyse für
+Service Anbieter/Berater,ÍNDUMESS (industrielle Messtechnik),"Resources| Nutzt eigene Serv er um
+Serv ices zu entwickeln","Activities| Führt Bedarf sanalyse für
 Serv ices durch
 Entwickelt neue Services und
 Schnittstellen
@@ -372,11 +372,11 @@ Schnittstellen
 Registrierung des Services auf
 der Plattf orm/ im Service-Store
 Berät Serv ice-Nutzer und
-Maschinenhersteller","Value contribution in ecosystem:  Ermöglichen Konnektivität und
+Maschinenhersteller","Value contribution in ecosystem|  Ermöglichen Konnektivität und
 Kompatibilität mit anderen Services und
 Komponenten/Maschinen
 Steigern Attraktivität der Plattform
-Bildet einen Teil der Serv ice-Angebote","Value contribution for the actors in this role: Kann Standards nutzen um
+Bildet einen Teil der Serv ice-Angebote","Value contribution for the actors in this role|Kann Standards nutzen um
 Serv ices kompatibel zu
 machen",1,"Ähnlich den Applikationsanbietern stehen Serviceanbieter in ein einer Abhängigkeit zum
 Ökosystem, als auch zu anderen Rollen. Bspw. wäre der Kontakt über das Ökosystem (z.B. über
@@ -389,8 +389,8 @@ Ebenso stellt die Schnittstellen-Rolle des Systemintegrators hier eine Funktion 
 beim Design der Plattform berücksichtigt werden muss. Im Speziellen sollte der Fall interner
 vs. externer Systemintegrator unterschieden werden, bzw. Möglichkeiten ermittelt werden,
 wie diese Rolle ausgefüllt werden kann, sodass keine Konflikte entstehen."
-Service Anbieter/Berater,slashwhy,"Resources: Nutzt eigene Serv er um
-Serv ices zu entwickeln","Activities: Führt Bedarf sanalyse für
+Service Anbieter/Berater,slashwhy,"Resources| Nutzt eigene Serv er um
+Serv ices zu entwickeln","Activities| Führt Bedarf sanalyse für
 Serv ices durch
 Entwickelt neue Services und
 Schnittstellen
@@ -399,11 +399,11 @@ Schnittstellen
 Registrierung des Services auf
 der Plattf orm/ im Service-Store
 Berät Serv ice-Nutzer und
-Maschinenhersteller","Value contribution in ecosystem:  Ermöglichen Konnektivität und
+Maschinenhersteller","Value contribution in ecosystem|  Ermöglichen Konnektivität und
 Kompatibilität mit anderen Services und
 Komponenten/Maschinen
 Steigern Attraktivität der Plattform
-Bildet einen Teil der Serv ice-Angebote","Value contribution for the actors in this role: Kann Standards nutzen um
+Bildet einen Teil der Serv ice-Angebote","Value contribution for the actors in this role| Kann Standards nutzen um
 Serv ices kompatibel zu
 machen",1,"Ähnlich den Applikationsanbietern stehen Serviceanbieter in ein einer Abhängigkeit zum
 Ökosystem, als auch zu anderen Rollen. Bspw. wäre der Kontakt über das Ökosystem (z.B. über
@@ -416,20 +416,20 @@ Ebenso stellt die Schnittstellen-Rolle des Systemintegrators hier eine Funktion 
 beim Design der Plattform berücksichtigt werden muss. Im Speziellen sollte der Fall interner
 vs. externer Systemintegrator unterschieden werden, bzw. Möglichkeiten ermittelt werden,
 wie diese Rolle ausgefüllt werden kann, sodass keine Konflikte entstehen."
-Plattformbetreiber,Trumpf (Axoom Plattform),"Resources: IT-Inf rastruktur
+Plattformbetreiber,Trumpf (Axoom Plattform),"Resources| IT-Inf rastruktur
 Data-Storage
 Serv er-Kapazitäten für
-Plattf orm","Activities: Stellt Marktplatz für SS zur
+Plattform","Activities| Stellt Marktplatz für SS zur
 Verf ügung (2-sided Plattform)
 Serv ice konfigurieren und
 Kombinierbarkeit gewährleisten
 Serv ice-Paket (Applikation)
 muss deployable sein!
-Serv ice Store anbieten: Tech.
+Service Store anbieten: Tech.
 Voraussetzungen, Kompatibilität
 Konnektivität gewährleisten
 Interaktion der Akteure wird
-ermöglicht","Value contribution in ecosystem: Stellt Serv ice- und Integrationstools zur
+ermöglicht","Value contribution in ecosystem| Stellt Serv ice- und Integrationstools zur
 Verf ügung: Dev. Confi., Serv. Conf.
 (z.B. was ist mit was kombinierbar?)
 Stellt grundlegende rechtliche
@@ -440,7 +440,7 @@ Stellt Validitätsmanagement zur
 Verf ügung)
 Drag'n'Drop Workflow Erstellung
 Stellt Grund-Infrastruktur zur Verfügung
-Enabler f ür Smart Services","Value contribution for the actors in this role:  Plattf orm als Mittel zum
+Enabler f ür Smart Services","Value contribution for the actors in this role|  Plattf orm als Mittel zum
 Zweck: z.B. Service inklusive,
 wenn Hardware v erkauft wird
 Pay per Use

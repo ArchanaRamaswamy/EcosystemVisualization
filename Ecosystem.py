@@ -129,6 +129,12 @@ app.layout = dbc.Container([
                                 'label': 'data(label)'
                             }
                         },
+                        {
+                            'selector': 'edge',
+                            'style': {
+                                'curve-style': 'straight'
+                            }
+                        },
 
                         # Group selectors for EDGES
                         # {

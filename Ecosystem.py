@@ -41,56 +41,50 @@ df = pd.melt(df, id_vars=['Roles','Actors','Dependency','RoleInfo'],
              var_name='results',value_name='StructuralEements')
 #Actor data for cytoscape
 Myelements = [ #Nodes
-                {'data': {'id': 'SIone', 'label': 'BTC Business Technology Consulting AG'},
+                {'data': {'id': 'BTC', 'label': 'BTC Business Technology Consulting AG'},
                  'position': {'x': 150, 'y': 50}, 'classes': 'NodeColor'
                  },
 
-                {'data': {'id': 'MOone', 'label': 'Volkswagen'},
+                {'data': {'id': 'Volkswagen', 'label': 'Volkswagen'},
                  'position': {'x': 300, 'y': 150}, 'classes': 'NodeColor'
                  },
 
-                {'data': {'id': 'MOtwo', 'label': 'Gerresheimer'},
-                 'position': {'x': 300, 'y': 170}, 'classes': 'NodeColor'
-                 },
-
-                {'data': {'id': 'MOthree', 'label': 'Sennheiser'},
-                 'position': {'x': 300, 'y': 190}, 'classes': 'NodeColor'
-                 },
-
-                {'data': {'id': 'MCSone', 'label': 'Lenze'},
+                {'data': {'id': 'Lenze', 'label': 'Lenze'},
                  'position': {'x': 200, 'y': 200}, 'classes': 'NodeColor'
                  },
 
-                {'data': {'id': 'MMone', 'label': 'Siemens AG'},
+                {'data': {'id': 'Siemens', 'label': 'Siemens AG'},
                  'position': {'x': 190, 'y': 190}, 'classes': 'NodeColor'
                  },
 
-                {'data': {'id': 'MMtwo', 'label': 'DMG Mori'},
-                 'position': {'x': 190, 'y': 200}, 'classes': 'NodeColor'
-                 },
-
-                {'data': {'id': 'APone', 'label': 'RapidMiner GmbH'},
+                {'data': {'id': 'RapidMiner', 'label': 'RapidMiner GmbH'},
                  'position': {'x': 160, 'y': 190}, 'classes': 'NodeColor'
                  },
 
-                {'data': {'id': 'SPone', 'label': 'slashwhy'},
+                {'data': {'id': 'slashwhy', 'label': 'Slashwhy'},
                  'position': {'x': 140, 'y': 170}, 'classes': 'NodeColor'
                  },
 
-                {'data': {'id': 'POone', 'label': 'Trump (Axoom platform)'},
+                {'data': {'id': 'Trump', 'label': 'Trump (Axoom platform)'},
                  'position': {'x': 120, 'y': 150}, 'classes': 'NodeColor'
                  },
 
                 # Links
-                {'data': {'source': 'SIone', 'target': 'MOone'}, 'classes': 'EdgeColor'},
-                {'data': {'source': 'SIone', 'target': 'MOtwo'}, 'classes': 'EdgeColor'},
-                {'data': {'source': 'SIone', 'target': 'MOthree'}, 'classes': 'EdgeColor'},
-                {'data': {'source': 'MOone', 'target': 'MCSone'}, 'classes': 'EdgeColor'},
-                {'data': {'source': 'MCSone', 'target': 'MMone'}, 'classes': 'EdgeColor'},
-                {'data': {'source': 'MCSone', 'target': 'MMtwo'}, 'classes': 'EdgeColor'},
-                {'data': {'source': 'MMtwo', 'target': 'APone'}, 'classes': 'EdgeColor'},
-                {'data': {'source': 'APone', 'target': 'SPone'}, 'classes': 'EdgeColor'},
-                {'data': {'source': 'SPone', 'target': 'POone'}, 'classes': 'EdgeColor'},
+                {'data': {'source': 'Lenze', 'target': 'Siemens'}, 'classes': 'EdgeColor tri'},
+                {'data': {'source': 'Siemens', 'target': 'Volkswagen'}, 'classes': 'EdgeColor tri'},
+
+                {'data': {'source': 'BTC', 'target': 'Volkswagen'}, 'classes': 'EdgeColor SI'},
+                {'data': {'source': 'BTC', 'target': 'RapidMiner'}, 'classes': 'EdgeColor SI'},
+
+                {'data': {'source': 'RapidMiner', 'target': 'Volkswagen'}, 'classes': 'EdgeColor tri'},
+                {'data': {'source': 'slashwhy', 'target': 'RapidMiner'}, 'classes': 'EdgeColor tri'},
+
+                {'data': {'source': 'Trump', 'target': 'Lenze'}, 'classes': 'EdgeColor PI'},
+                {'data': {'source': 'Trump', 'target': 'Siemens'}, 'classes': 'EdgeColor PI'},
+                {'data': {'source': 'Trump', 'target': 'Volkswagen'}, 'classes': 'EdgeColor PI'},
+                {'data': {'source': 'Trump', 'target': 'RapidMiner'}, 'classes': 'EdgeColor PI'},
+                {'data': {'source': 'Trump', 'target': 'BTC'}, 'classes': 'EdgeColor PI'},
+                {'data': {'source': 'Trump', 'target': 'slashwhy'}, 'classes': 'EdgeColor PI'},
             ]
 # Build App
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -158,6 +152,28 @@ app.layout = dbc.Container([
                                 'line-color': '#9433FF'
                             }
                         },
+                      {
+                            'selector': '.SI',
+                            'style': {
+                                'target-arrow-color': 'blue',
+                                'target-arrow-shape': 'triangle',
+                                'line-color': 'red'
+                            }
+                        },
+                        {
+                            'selector': '.tri',
+                            'style': {
+                                'target-arrow-color': 'blue',
+                                'target-arrow-shape': 'triangle'
+                            }
+                        },
+                        {
+                            'selector': '.PI',
+                            'style': {
+                                'target-arrow-color': 'blue',
+                                'target-arrow-shape': 'triangle',
+                                'line-color': 'blue'
+                            }
                     ]
                     )]
                 )], width =6)
@@ -253,6 +269,7 @@ def update_modal(data):
         for x in dff["StructuralEements"]:
             if pd.isnull(x):
                 continue
+            rows.append(html.B((x.split(":"))[0]))             
             rows.append(html.Tr([html.Td(x)]))
         table_body = [html.Tbody(rows)]
         return dbc.Table(table_header + table_body, bordered=True)

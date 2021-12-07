@@ -87,50 +87,6 @@ lediglich auf der Plattform Verwendung finden und dadurch eine Maschine nur mit 
 und Applikationen der Plattform kompatibel ist. Dies mag zwar aus Sicht der
 Plattformbetreiber wünschenswert erscheinen, ist jedoch eine enorme Eintrittsbarriere für die
 Kundenseite (Eisenmann, 2008)."
-Maschinenbetreiber,Sennheiser,"Resources|Die Maschine/ Anlage/
-Produktionsstraße oder
-sogar das Werk
- ECS (Edge,Cloud,Server)
- Grundlegende IT
-Inf rastruktur","Activities|Applikationen auf eigenen
-Serv ern deployen
-Integration der Applikationen in
-die Geschäf tsprozesse
- Applikationen selektieren (Was
-möchte ich haben?)
- Potentiale erf assen / Bedarfe
-ermitteln","Value contribution in ecosystem| Kann als Data-Provider fungieren: z.B.
-für Serv iceoptimierung
- Betreiber können selbst neue
-Applikationen adaptieren/innovieren
-(Self -Service)
- Zahlt monetär für: Für Services, Für
-Nutzung der Plattform, für
-Dienstleistung und Beratung um
-Applikationen zu integrieren
- Zahlt f ür Nutzung von Infrastruktur:
-eigene und externe
- Hat Netzwerkeffektbeitrag für das
-Ökosy stem","Value contribution for the actors in this role| Optimiert die
-Geschäf tsprozesse: z.B.
-Produktivität, Qualität,
-Kostensenkung, Neue
-Marktpotenziale oder generell
-neue Märkte
-Neue Geschäftsmodelle
-nutzen",2,"Ein Effekt auf Geschäftsebene, den die Plattform haben könnte ist, dass sich
-Maschinenbetreiber nicht in eine Abhängigkeit von einem speziellen System begeben, was
-dadurch erreicht wird, dass auf der Plattform verschiedene Anbieter Services und
-Applikationen anbieten die ähnlich kompatibel mit den Maschinen der Betreiber sind. D.h. es
-handelt sich um eine offene Plattform und nicht eine geschlossene (Dombrowski et al., 2020).2
-Ein Maschinenbetreiber sollte es dadurch leicht(er) haben bei Bedarf den Anbieter für einen
-Service oder eine Applikation zu wechseln.
-Eine weitere Abhängigkeit vom Ökosystem könnte sich auf technischer Ebene dadurch
-ergeben, wenn Standards (bspw. für Schnittstellen zu und von Maschinenkomponenten)
-lediglich auf der Plattform Verwendung finden und dadurch eine Maschine nur mit Services
-und Applikationen der Plattform kompatibel ist. Dies mag zwar aus Sicht der
-Plattformbetreiber wünschenswert erscheinen, ist jedoch eine enorme Eintrittsbarriere für die
-Kundenseite (Eisenmann, 2008)."
 Systemintegrator:,BTC Business Technology Consulting AG,Kein Resources,"Activities|Sorgt für Machbarkeitsprüfungen
 Führt das Deployment beim
 Anwender (ev tl. sich selbst)
@@ -319,7 +275,7 @@ auch Service und Applikationsanbieter sehen meist gar nicht wo ihre Angebote zum
 kommen. Durch eine hohe Transparenz über die Plattform könnten diese Marktverhältnisse
 verändert werden, was unbedingt beim Design der Plattform und des Ökosystems zu
 berücksichtigen ist."
-Applikationsanbieter/Berater,infor GmbH Deutschland,"Resources| Umgebung f ür
+Applikationsanbieter/Berater,RapidMiner GmbH,"Resources| Umgebung f ür
 Prototy ping
 Maschinenmodelle und
 Virtualisierungen","Activities| Schließt Service-Lücken ggf. mit
@@ -362,7 +318,93 @@ Machtverhältnis, das durch die Plattformbetreiber entsprechend reguliert werden
 muss. Damit der Applikationsanbieter nicht übermäßig durch die Serviceanbieter dominiert
 wird, sollte sich hier ein angemessenes Verhältnis einstellen, was jedoch nicht so einfach zu
 erreichen ist, aber von den Betreibern mitberücksichtigt werden muss"
-Service Anbieter/Berater,ÍNDUMESS (industrielle Messtechnik),"Resources| Nutzt eigene Serv er um
+Applikationsanbieter/Berater,Siemens AG,"Resources| Umgebung f ür
+Prototy ping
+Maschinenmodelle und
+Virtualisierungen","Activities| Schließt Service-Lücken ggf. mit
+eigenen Serv ices
+Vermittelt aktive zwischen der
+Serv ice/Applikations
+Anbieterseite und der
+Anf orderungsseite
+Gibt Anreize f ür neue Services
+Kombiniert Services von den
+entsp. Anbietern"," Value contribution in ecosystem| Ermöglichen Konnektivität und
+Kompatibilität mit anderen Services und
+Komponenten/Maschinen
+Steigern Attraktivität der Plattform
+Reduzieren die Komplexität der
+Lösungen (all-in-one)
+Stellt Lösungen in Form von
+Applikationen für komplexere
+Problemstellungen zur Verf ügung","Value contribution for the actors in this role| Generiert Cashflow durch
+Verkauf von Services und
+indirekt durch Drittanbieter von
+Applikationen
+Serv ices werden sichtbarer für
+Interessierte
+Erweitert seine Märkte",2,"Während Maschinenhersteller von der Qualität und Quantität der Services und Applikationen
+abhängen, sind Applikationsanbieter abhängig von der Applikationsselektion der
+Maschinenhersteller. Sollte eine Applikation unattraktiv sein, wird kein Maschinenhersteller
+seine Maschinen mit dieser kompatibel machen. Zwar kann der Plattformbetreiber einige
+Standards vorgeben, jedoch schränkt das die Entwickler in ihrer Innovationsfreiheit ein und
+macht die Plattform unattraktiv, da dadurch auch Einstiegsbarrieren gesetzt werden. Ein
+Applikationsanbieter, der einen Großteil seines Portfolios umgestalten muss, um mit einem
+Angebot auf die Plattform gehen zu können möchte gerne wenig „Umrüstungskosten“ haben,
+um diesen dafür kompatibel zu machen. Im aktuellen (nicht-Plattform) Geschäft stellen
+Maschinenhersteller die Deployment-Templates zur Verfügung, an denen sich die
+Applikationshersteller orientieren. Je nach Regulierung und Machtverhältnis könnte sich
+dieser Mechanismus ändern.
+Zudem stehen die Applikationsanbieter in Abhängigkeit zu den Serviceanbietern, da sie sich in
+bestimmtem Maß nach diesen orientieren müssen. Hier ergibt sich ein weiteres
+Machtverhältnis, das durch die Plattformbetreiber entsprechend reguliert werden kann oder
+muss. Damit der Applikationsanbieter nicht übermäßig durch die Serviceanbieter dominiert
+wird, sollte sich hier ein angemessenes Verhältnis einstellen, was jedoch nicht so einfach zu
+erreichen ist, aber von den Betreibern mitberücksichtigt werden muss"
+Applikationsanbieter/Berater,slashwhy,"Resources| Umgebung f ür
+Prototy ping
+Maschinenmodelle und
+Virtualisierungen","Activities| Schließt Service-Lücken ggf. mit
+eigenen Serv ices
+Vermittelt aktive zwischen der
+Serv ice/Applikations
+Anbieterseite und der
+Anf orderungsseite
+Gibt Anreize f ür neue Services
+Kombiniert Services von den
+entsp. Anbietern"," Value contribution in ecosystem| Ermöglichen Konnektivität und
+Kompatibilität mit anderen Services und
+Komponenten/Maschinen
+Steigern Attraktivität der Plattform
+Reduzieren die Komplexität der
+Lösungen (all-in-one)
+Stellt Lösungen in Form von
+Applikationen für komplexere
+Problemstellungen zur Verf ügung","Value contribution for the actors in this role| Generiert Cashflow durch
+Verkauf von Services und
+indirekt durch Drittanbieter von
+Applikationen
+Serv ices werden sichtbarer für
+Interessierte
+Erweitert seine Märkte",2,"Während Maschinenhersteller von der Qualität und Quantität der Services und Applikationen
+abhängen, sind Applikationsanbieter abhängig von der Applikationsselektion der
+Maschinenhersteller. Sollte eine Applikation unattraktiv sein, wird kein Maschinenhersteller
+seine Maschinen mit dieser kompatibel machen. Zwar kann der Plattformbetreiber einige
+Standards vorgeben, jedoch schränkt das die Entwickler in ihrer Innovationsfreiheit ein und
+macht die Plattform unattraktiv, da dadurch auch Einstiegsbarrieren gesetzt werden. Ein
+Applikationsanbieter, der einen Großteil seines Portfolios umgestalten muss, um mit einem
+Angebot auf die Plattform gehen zu können möchte gerne wenig „Umrüstungskosten“ haben,
+um diesen dafür kompatibel zu machen. Im aktuellen (nicht-Plattform) Geschäft stellen
+Maschinenhersteller die Deployment-Templates zur Verfügung, an denen sich die
+Applikationshersteller orientieren. Je nach Regulierung und Machtverhältnis könnte sich
+dieser Mechanismus ändern.
+Zudem stehen die Applikationsanbieter in Abhängigkeit zu den Serviceanbietern, da sie sich in
+bestimmtem Maß nach diesen orientieren müssen. Hier ergibt sich ein weiteres
+Machtverhältnis, das durch die Plattformbetreiber entsprechend reguliert werden kann oder
+muss. Damit der Applikationsanbieter nicht übermäßig durch die Serviceanbieter dominiert
+wird, sollte sich hier ein angemessenes Verhältnis einstellen, was jedoch nicht so einfach zu
+erreichen ist, aber von den Betreibern mitberücksichtigt werden muss"
+Service Anbieter/Berater,RapidMiner GmbH,"Resources| Nutzt eigene Serv er um
 Serv ices zu entwickeln","Activities| Führt Bedarf sanalyse für
 Serv ices durch
 Entwickelt neue Services und
@@ -389,7 +431,7 @@ Ebenso stellt die Schnittstellen-Rolle des Systemintegrators hier eine Funktion 
 beim Design der Plattform berücksichtigt werden muss. Im Speziellen sollte der Fall interner
 vs. externer Systemintegrator unterschieden werden, bzw. Möglichkeiten ermittelt werden,
 wie diese Rolle ausgefüllt werden kann, sodass keine Konflikte entstehen."
-Service Anbieter/Berater,slashwhy,"Resources| Nutzt eigene Serv er um
+Service Anbieter/Berater,UiPath,"Resources| Nutzt eigene Serv er um
 Serv ices zu entwickeln","Activities| Führt Bedarf sanalyse für
 Serv ices durch
 Entwickelt neue Services und
@@ -416,7 +458,7 @@ Ebenso stellt die Schnittstellen-Rolle des Systemintegrators hier eine Funktion 
 beim Design der Plattform berücksichtigt werden muss. Im Speziellen sollte der Fall interner
 vs. externer Systemintegrator unterschieden werden, bzw. Möglichkeiten ermittelt werden,
 wie diese Rolle ausgefüllt werden kann, sodass keine Konflikte entstehen."
-Plattformbetreiber,Trumpf (Axoom Plattform),"Resources| IT-Inf rastruktur
+Plattformbetreiber,Operator Gmbh (IIP platform),"Resources| IT-Inf rastruktur
 Data-Storage
 Serv er-Kapazitäten für
 Plattform","Activities| Stellt Marktplatz für SS zur
